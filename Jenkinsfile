@@ -14,7 +14,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                withMaven(maven 'Maven-3-9') {
+                withMaven(maven: 'Maven-3-9') {
                     sh '''
                         mvn clean install
                     '''
